@@ -1,0 +1,10 @@
+[Unit]
+Description=OLED System Information
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/opt/fp/bin/oled-info.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=OLED Splash Screen
+DefaultDependencies=no
+
+[Service]
+Type=simple
+ExecStart=/opt/fp/bin/oled-splash.py
+
+[Install]
+WantedBy=remote-fs-pre.target
